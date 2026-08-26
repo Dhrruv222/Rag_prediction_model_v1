@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+.venv/
+venv/
+.pytest_cache/
+
+# Environment
+.env
+
+# Vector store artifacts (rebuildable from data/ via `python main.py --ingest`)
+vectorstore/*
+!vectorstore/.gitkeep
+
+# Source documents (may be large/sensitive; keep local by default)
+data/*
+!data/README.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
